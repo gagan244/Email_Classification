@@ -1,0 +1,10 @@
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+flask
+OS
+joblib
+datetime module
+re module 

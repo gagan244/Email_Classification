@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Gradient Background */
+        body {
+            background: linear-gradient(135deg, #74ebd5, #acb6e5);
+            font-family: 'Poppins', sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Card Container */
+        .result-container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Heading */
+        h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Icon Styling */
+        .icon {
+            font-size: 60px;
+            color: #74ebd5;
+            margin-bottom: 20px;
+        }
+
+        /* Home Button */
+        .btn-primary {
+            background-color: #74ebd5;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            color: white;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .btn-primary:hover {
+            background-color: #53c6b9;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="result-container">
+        <!-- Result Icon -->
+        <i class="fas fa-envelope-open-text icon"></i>
+        <!-- Prediction Output -->
+        <h2>Entered email is {{answer}}</h2>
+        <!-- Button to return to Home -->
+        <a href="/" class="btn btn-primary">Go Back to Home</a>
+    </div>
+</body>
+
+</html>
